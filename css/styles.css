@@ -323,11 +323,22 @@ img {
     /* Extiende el fiel a lo que queda */
     flex: 1;
     border: .1rem solid var(--gris);
+    /* width: 100%; */
 }
 
 .campo__field--textarea {
     height: 20rem;
     resize: none;
+}
+
+@media (max-width: 767px) {
+    .campo {
+        display: inline-block;
+    }
+    .campo__field {
+        padding: 1rem;
+        width: 100%;
+    }
 }
 
 
